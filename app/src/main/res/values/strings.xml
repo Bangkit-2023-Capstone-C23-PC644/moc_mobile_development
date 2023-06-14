@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Medical Oversee</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+
+    <string name="splash">Logo Splash Screen</string>
+    <string name="title">Medical Oversee Control</string>
+
+    <string name="title_menu_1">Informasi Terbaru</string>
+    <string name="title_menu_2">Satu Aplikasi</string>
+    <string name="title_menu_3">Lokasi Terdekat</string>
+    <string name="desc_menu_1">Temukan informasi yang anda butuhkan saat akan melakukan kunjungan perawatan.</string>
+    <string name="desc_menu_2">Memberikan kemudahan untuk anda dalam mencari berbagai tempat rujukan.</string>
+    <string name="desc_menu_3">Membantu anda dalam penangan perawatan untuk semakin cepat ke tempat rujukan.</string>
+
+    <string name="mulai">Mulai sekarang</string>
+    <string name="desc_logo">logo menu</string>
+
+    <string name="welcome">Selamat Datang</string>
+    <string name="banner">Cari kebutuhan anda, segera mulai!</string>
+    <string name="name">Nama Lengkap</string>
+    <string name="hintName">Budi Gunawan</string>
+    <string name="nik">NIK</string>
+    <string name="hintNik">3672938482831234</string>
+    <string name="bergabung">Segera Bergabung</string>
+    <string name="phone">Nomor Telepon</string>
+    <string name="hintPhone">081283847283</string>
+    <string name="email">Email</string>
+    <string name="hintEmail">email@domain.com</string>
+    <string name="password">Password</string>
+    <string name="hintPassword">Kata Sandi</string>
+    <string name="signup">Daftar</string>
+    <string name="have">Sudah punya akun?</string>
+    <string name="not_have">Belum punya akun?</string>
+    <string name="signupLink">Daftar</string>
+    <string name="loginLink">Masuk</string>
+    <string name="add_location">Izinkan deteksi lokasi</string>
+
+    <string name="please_activate_location_message">Tolong aktifkan layanan lokasi anda</string>
+    <string name="location_permission_denied">Izin lokasi tidak dibolehkan</string>
+    <string name="location_permission_denied_action">Ubah Pengaturan</string>
+    <string name="login">Masuk</string>
+    <string name="title_home">Home</string>
+    <string name="title_maps">Maps</string>
+    <string name="title_bookmark">Bookmark</string>
+    <string name="title_profile">Profile</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="photo_profile">Photo Profile</string>
+    <string name="textview">TextView</string>
+    <string name="edit_data">Ubah Data</string>
+    <string name="logut">Keluar</string>
+    <string name="title_nik">NIK</string>
+    <string name="title_location">Lokasi</string>
+    <string name="dataname">TextView\n</string>
+    <string name="data_address">Alamat</string>
+    <string name="desc_button">klik untuk update lokasi</string>
+    <string name="your_location">lokasi</string>
+    <string name="head_location">Lokasi anda</string>
+
+    <string name="searchbar_hint">Masukkan kata</string>
+    <string name="retry">Muat Ulang</string>
+    <string name="loading">Memuat</string>
+    <string name="data_distance">distance\n</string>
+    <string name="desc_logo1">gambar puskesmas\n</string>
+    <string name="status_keramaian">Status Keramaian</string>
+    <string name="time_added">Tercatat pada jam:</string>
+    <string name="status_rawat">Fasilitas Perawatan\n</string>
+    <string name="status_nakes">Tenaga Kesehatan</string>
+    <string name="findroute">Temukan rute</string>
+    <string name="fab">tekan untuk bookmark</string>
+
+    <string name="jumlah_text">Jumlah %d</string>
+    <string name="tingkat_text">Tingkat %s</string>
+    <string name="tersedia_text">Tersedia %s</string>
+    <string name="visitors">Jumlah Pengunjung:</string>
+    <string name="error_email">Format Email Salah</string>
+    <string name="error_pass">Password harus lebih dari 8 karakter</string>
+    <string name="error_nik">NIK harus 16 karakter</string>
+</resources>
