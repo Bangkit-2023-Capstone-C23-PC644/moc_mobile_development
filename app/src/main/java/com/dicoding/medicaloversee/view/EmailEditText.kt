@@ -47,6 +47,5 @@ class EmailEditText : AppCompatEditText {
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        //hint = context.getString(R.string.hintEmail)
     }
 }

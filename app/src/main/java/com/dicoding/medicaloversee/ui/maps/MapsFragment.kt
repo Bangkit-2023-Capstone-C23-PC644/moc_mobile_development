@@ -40,8 +40,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
     private lateinit var userPreference: UserPreference
     private var token: String = ""
 
-    //private val boundsBuilder = LatLngBounds.Builder()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -78,7 +76,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
         setupViewModel()
         observeViewModel()
         setupStoryMarker()
-        //setMapStyle()
     }
 
     private fun setupViewModel() {
@@ -93,10 +90,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
             Toast.makeText(requireContext(), "Failed to load story", Toast.LENGTH_SHORT).show()
         }
 
-        homeViewModel.isSuccess.observe(viewLifecycleOwner) {
-            Toast.makeText(requireContext(), it, Toast.LENGTH_SHORT).show()
-        }
-
         homeViewModel.listHospital.observe(viewLifecycleOwner) {
             addManyMarker(it)
         }
@@ -107,22 +100,11 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
             val latLng = LatLng(hospital.lintang, hospital.bujur)
             val addressName = getAddressName(hospital.lintang, hospital.bujur)
             mMap.addMarker(MarkerOptions().position(latLng).title(hospital.namaRS).snippet("$addressName"))
-            //boundsBuilder.include(latLng)
 
             if (index == 0) {
                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 15f))
             }
         }
-
-        /*val bounds: LatLngBounds = boundsBuilder.build()
-        mMap.animateCamera(
-            CameraUpdateFactory.newLatLngBounds(
-                bounds,
-                resources.displayMetrics.widthPixels,
-                resources.displayMetrics.heightPixels,
-                300
-            )
-        )*/
     }
 
     private fun getAddressName(lat: Double, lon: Double): String? {
@@ -150,20 +132,4 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
             }
         }
     }
-
-    /*private fun setMapStyle() {
-        try {
-            val success =
-                mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(requireContext(), R.raw.map_style))
-            if (!success) {
-                Log.e(TAG, "Style parsing failed.")
-            }
-        } catch (exception: Resources.NotFoundException) {
-            Log.e(TAG, "Can't find style. Error: ", exception)
-        }
-    }*/
-
-    /*companion object {
-        const val TAG = "maps"
-    }*/
 }

@@ -1,6 +1,5 @@
 package com.dicoding.medicaloversee.ui.detail
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -57,7 +56,6 @@ class DetailViewModel : ViewModel() {
                             pplestimate = detailHospital.pplestimate,
                             timeadded = detailHospital.timeadded
                         )
-                        Log.d("tes", newHospital.toString())
                         _hospital.value = newHospital
                         _isSuccess.value = responseBody.message
                     } else {
@@ -69,7 +67,6 @@ class DetailViewModel : ViewModel() {
             }
 
             override fun onFailure(call: Call<HospitalResponse>, t: Throwable) {
-                t.localizedMessage?.let { Log.d("tes", it) }
                 _isLoading.value = false
                 _isError.value = true
             }

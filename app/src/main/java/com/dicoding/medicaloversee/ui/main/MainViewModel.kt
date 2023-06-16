@@ -30,9 +30,4 @@ class MainViewModel(private val pref: UserPreference): ViewModel() {
         }
     }
 
-    /*fun updateLocation(lintang: String, bujur: String) {
-        viewModelScope.launch {
-            pref.updateLocation(lintang, bujur)
-        }
-    }*/
 }

@@ -22,9 +22,6 @@ class HomeViewModel(private val pref: UserPreference) : ViewModel() {
     private val _isError = MutableLiveData<Boolean>()
     val isError: LiveData<Boolean> = _isError
 
-    private val _isSuccess = MutableLiveData<String>()
-    val isSuccess: LiveData<String> = _isSuccess
-
     private val _hospitalAdapter = MutableLiveData<ListHospitalAdapter>()
     val hospitalAdapter: LiveData<ListHospitalAdapter> = _hospitalAdapter
 
@@ -57,7 +54,6 @@ class HomeViewModel(private val pref: UserPreference) : ViewModel() {
                         listStoryAdapter.submitList(responseBody.result)
                         _hospitalAdapter.value = listStoryAdapter
                         _listHospital.value = responseBody.result
-                        _isSuccess.value = responseBody.message
                     } else {
                         _isError.value = true
                     }

@@ -98,10 +98,6 @@ class HomeFragment : Fragment() {
             Toast.makeText(requireContext(), "Failed to load story", Toast.LENGTH_SHORT).show()
         }
 
-        homeViewModel.isSuccess.observe(viewLifecycleOwner) {
-            Toast.makeText(requireContext(), it, Toast.LENGTH_SHORT).show()
-        }
-
         homeViewModel.hospitalAdapter.observe(viewLifecycleOwner) { listHospitalAdapter ->
             binding.rvHospitals.adapter = listHospitalAdapter
         }

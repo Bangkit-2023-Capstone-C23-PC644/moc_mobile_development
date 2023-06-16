@@ -18,15 +18,11 @@ data class NearestHospital(
 )
 
 @Parcelize
-//@Entity(tableName = "hospital")
 data class Hospital(
 
-    //@PrimaryKey
-    //@ColumnInfo(name = "hospital_id")
     @field:SerializedName("hospitalID")
     val hospitalID: String,
 
-    //@ColumnInfo(name = "nama_rs")
     @field:SerializedName("namaRS")
     val namaRS: String,
 
@@ -36,7 +32,6 @@ data class Hospital(
     @field:SerializedName("bujur")
     val bujur: Double,
 
-    //@ColumnInfo(name = "distance")
     @field:SerializedName("distance")
     val distance: Double,
 
