@@ -1,5 +1,8 @@
 # C23-PC644 - Medical Oversee Control - Mobile Development
 
+## Author
+- [Emirul Mukmin](https://github.com/emirulmukmin)
+
 ## App Description
 
 Introducing MOC (Medical Oversee Control), a revolutionary Android app designed to enhance the hospital experience for patients. MOC's main feature is to provide users with real-time information on the current occupancy levels at hospitals, enabling them to make informed decisions about when to visit. Say goodbye to long queues and wasted time!
