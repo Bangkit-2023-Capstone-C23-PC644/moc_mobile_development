@@ -79,7 +79,7 @@ plugins {
 
 **Clone**
 ```bash
-$ git clone https://github.com/robertheo15/moc_mobile_development.git
+$ git clone https://github.com/emirulmukmin/moc_mobile_development.git
 ```
 
 **Open in Android Studio**
